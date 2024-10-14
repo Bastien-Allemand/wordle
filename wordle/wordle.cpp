@@ -5,7 +5,7 @@
 //Amour Plage Livre Fille Chien Étoile Sable Tasse Porte Souris
 int generateword()
 {
-	const char Mot[] = "Amour", "Plage", "Livre", "Fille", "Chien", "Étoile", "Sable", "Tasse", "Porte", "Souris";
+	const char Mot[] = "Amour", "Plage", "Livre", "Flle", "Chien", "Étoile", "Sable", "Tasse", "Porte", "Souris";
 	int num = rand() % 9;
 	return Mot[num];
 }
