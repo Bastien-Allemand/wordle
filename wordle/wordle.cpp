@@ -24,7 +24,8 @@ void GetSecretWord(const char*& secretword)
     }
 }
 
-void GetPlayerGuess(char* guessed) {
+void GetPlayerGuess(char* guessed) 
+{
     do 
     {
         std::cout << "Entrez un mot de 5 lettres : ";
@@ -64,14 +65,17 @@ void CompareWords(char* guessed, const char* secretword)
     }
     std::cout << std::endl;
 }
-int playgame() {
+int playgame() 
+{
     const char* secretword;
     GetSecretWord(secretword);
-    while (true) {
+    while (true)
+    {
         char guessed[6];
         GetPlayerGuess(guessed);
         CompareWords(guessed, secretword);
-        if (strcmp(guessed, secretword) == 0) {
+        if (strcmp(guessed, secretword) == 0)
+        {
             std::cout << "Bravo !" << std::endl;
             wordsplayed[u] = secretword;
             u++;
