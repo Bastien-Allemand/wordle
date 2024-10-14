@@ -2,9 +2,18 @@
 //
 
 #include <iostream>
+//Amour Plage Livre Fille Chien Étoile Sable Tasse Porte Souris
+int generateword()
+{
+	const char Mot[] = "Amour", "Plage", "Livre", "Fille", "Chien", "Étoile", "Sable", "Tasse", "Porte", "Souris";
+	int num = rand() % 9;
+	return Mot[num];
+}
 
 int main()
 {
-    std::cout << "Hello Wod!\n";
+	srand(time(0));
+	int Mot = generateword();
+	return 0;
 }
 
